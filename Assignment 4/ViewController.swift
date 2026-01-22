@@ -51,8 +51,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func moodSaved(_ sender: UIButton) {
-        var dateString = date.formatted(date: .abbreviated, time: .omitted)
-        dateLabel.text = "On \(dateString) you felt emoji"
+        let dateString = date.formatted(date: .abbreviated, time: .omitted)
+        dateLabel.text = "On \(dateString) you felt \(moodEmoji)"
     }
 }
 
